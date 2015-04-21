@@ -1,0 +1,26 @@
+{
+  "name": "ssh-promise",
+  "version": "0.0.1",
+  "description": "promisified ssh2 wrapper",
+  "main": "./lib/client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonosmond/ssh-promise.git"
+  },
+  "keywords": [
+    "ssh",
+    "ssh2",
+    "promise",
+    "when"
+  ],
+  "author": "Anton Osmond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonosmond/ssh-promise/issues"
+  },
+  "homepage": "https://github.com/antonosmond/ssh-promise",
+  "dependencies": {
+    "ssh2": "^0.4.6",
+    "when": "^3.7.2"
+  }
+}
