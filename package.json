@@ -1,6 +1,6 @@
 {
   "name": "ssh-promise",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "promisified ssh2 wrapper",
   "main": "./lib/client",
   "repository": {
