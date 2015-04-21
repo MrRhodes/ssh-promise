@@ -46,7 +46,7 @@ var ssh = new Client({
 
 commands = [
   'mkdir test',
-  'echo "ssh-promise is awesome!" >> test'
+  'echo "ssh-promise is awesome!" >> test/ssh.txt'
 ];
 
 // Execute the commands and once all commands are complete, the then function will be called
