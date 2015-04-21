@@ -8,15 +8,21 @@ Usage
 ===============
 
 #### Executing a single ssh command
+
 ```javascript
 var Client = require('ssh-promise');
 
 // The config passed to the Client constructor should match the config required by ssh2
-var ssh = new Client({
+var config = {
   host: '192.168.100.100',
   username: 'ubuntu',
   privateKey: require('fs').readFileSync('/here/is/my/key')
-});
+}
+
+// The Client constructor can also take an optional logger.
+// This is any object which has both an info() and error() functions e.g. a bunyan logger.
+// If a logger is not provided, console will be used.
+var ssh = new Client(config, logger);
 
 // Execute the command and once complete, the then function will be called
 ssh.exec('mkdir test')
@@ -32,7 +38,6 @@ ssh.exec('mkdir test')
 
 
 #### Executing multiple ssh commands
-**NOTE**: in order to execute multiple commands in a single session, the commands are added to a ['here document'](http://en.wikipedia.org/wiki/Here_document) and executed on the remote host using /bin/bash so bash must be available on the host machine.
 
 ```javascript
 var Client = require('ssh-promise');
