@@ -13,7 +13,7 @@
     "promise",
     "when"
   ],
-  "author": "Anton Osmond",
+  "author": "Anton Osmond <antonosmond@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/antonosmond/ssh-promise/issues"
