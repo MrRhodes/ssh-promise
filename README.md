@@ -1,4 +1,4 @@
-Description
+ssh-promise
 ===========
 
 [ssh-promise](https://github.com/antonosmond/ssh-promise) is a simple [when](https://www.npmjs.com/package/when) promise wrapper around [ssh2](https://www.npmjs.com/package/ssh2) for [node.js](http://nodejs.org/).
